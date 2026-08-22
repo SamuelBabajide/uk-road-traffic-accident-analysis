@@ -10,7 +10,7 @@ An interactive Excel dashboard and prescriptive analysis of 307,973 UK road traf
 
 **Role:** Data Analyst — data preprocessing, dashboard design, statistical analysis, reporting.
 
-**Deliverables:** [Interactive dashboard](dashboard/) · [Presentation](presentation/)
+**Deliverables:** [Interactive dashboard](https://drive.google.com/file/d/1jJIKiuwEcXU-rf-_O_dlp_IWrfE80E_G/view?pli=1) · [Presentation](https://docs.google.com/presentation/d/1LQsMSxGpNYIKmLkVTFgpjfipAiHcbV5j/edit?usp=drive_link&ouid=114818397241570940294&rtpof=true&sd=true)
 
 UK Road Traffic Accident Dashboard
 <img width="1425" height="662" alt="image" src="https://github.com/user-attachments/assets/53ab3c37-3ab9-4654-a3af-e2de3cc797cc" />
