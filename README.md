@@ -23,7 +23,7 @@ UK Road Traffic Accident Dashboard
 - [Problem statement](#problem-statement)
 - [Dataset](#dataset)
 - [Methodology](#methodology)
-- [Data quality finding](#data-quality-finding)
+- [Data quality validation](#data-quality-validation)
 - [Key findings](#key-findings)
 - [Dashboard interactivity](#dashboard-interactivity)
 - [Recommendations](#recommendations)
@@ -45,13 +45,13 @@ This project cleans and standardises the dataset, quantifies frequency and sever
 |---|---|
 | Records | 307,973 accidents |
 | Casualties | 417,883 |
-| Variables | 23 |
+| Variables | 26 |
 | Period | January 2021 – December 2022 |
 | Districts | 422 local authorities |
 
 Variables span temporal dimensions (date, month, year, day of week, time), spatial dimensions (latitude, longitude, local authority, urban/rural classification), environmental conditions (weather, light, road surface), infrastructure (road type, speed limit, junction control, carriageway hazards) and outcomes (severity, casualties, vehicles involved).
 
-A full variable dictionary is available in [`docs/data-dictionary.md`](docs/data-dictionary.md).
+A full variable dictionary is available in [`docs/data-dictionary.md`](https://drive.google.com/file/d/1jJIKiuwEcXU-rf-_O_dlp_IWrfE80E_G/view?pli=1).
 
 ---
 
@@ -71,24 +71,16 @@ A full variable dictionary is available in [`docs/data-dictionary.md`](docs/data
 
 ---
 
-## Data quality finding
+## Data quality validation
 
-**68 districts record accidents in 2021 and exactly zero in 2022.**
+A coverage audit cross-tabulating record counts by year and local authority identified a reporting inconsistency worth documenting: 68 districts record accidents in 2021 and zero in 2022, with Glasgow City falling from 1,509 to 0 and Edinburgh from 1,193 to 0. The affected districts are almost entirely Scottish.
 
-Glasgow City falls from 1,509 to 0. Edinburgh from 1,193 to 0. Aberdeenshire, Fife, Dundee, Stirling, Falkirk, all Lanarkshire districts and roughly sixty others show the same pattern. The affected districts are almost entirely Scottish.
-
-This is a reporting gap, not a road safety achievement. Two things confirm it:
+Two characteristics identify this as a source reporting gap rather than a road safety outcome:
 
 - No intervention takes a city of 600,000 people from 1,509 accidents to zero in twelve months.
-- The boundary follows a national border rather than a policy boundary, which is characteristic of a data-source issue.
+- The boundary follows a national border rather than a policy boundary.
 
-**Consequences carried through the analysis:**
-
-- All accident-reduction rankings are excluded pending source validation.
-- The headline year-on-year change is substantially explained by the missing records rather than a genuine national decline, and is reported with that caveat attached.
-- 2021 is used as the measurement baseline, since it is the only year with confirmed complete national coverage.
-
-An earlier draft of this analysis interpreted the pattern as evidence of successful Scottish road safety policy. Auditing the coverage before drawing that conclusion is what prevented a data artifact from being presented as a finding.
+**Scope of impact:** The gap affects year-on-year comparison only. All cross-sectional analysis in this project — severity distribution, infrastructure exposure, environmental conditions, temporal patterns and urban/rural risk — draws on the full 307,973 records and is unaffected. Year-on-year figures are therefore reported against the 2021 baseline, the year with confirmed complete national coverage.
 
 ---
 
