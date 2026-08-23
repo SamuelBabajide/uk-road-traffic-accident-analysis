@@ -138,7 +138,7 @@ The same caution applies to speed limits. The dataset records the *posted limit 
 Four cross-filtering slicers (Year, Urban/Rural, Accident Severity, City) update every visual simultaneously. Applying the rural filter reveals a materially different risk profile:
 
 Dashboard with rural filter applied
-<img width="1893" height="878" alt="image" src="https://github.com/user-attachments/assets/240d5a0e-7fa7-4950-acfc-4bba34355695" />
+<img width="1256" height="501" alt="image" src="https://github.com/user-attachments/assets/3b3a2255-1a0f-43a2-967e-f172f7c217e8" />
 
 | Metric | All areas | Rural only |
 |---|---|---|
