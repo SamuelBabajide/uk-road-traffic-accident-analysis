@@ -189,5 +189,5 @@ Cornwall rises from eighth to first under the rural filter, confirming it as a g
 
 **Samuel Babajide** — Data Scientist specialising in applied analytics and predictive modelling within complex, regulated environments.
 
-[LinkedIn](https://linkedin.com/in/samuelbbabajide) · [GitHub](https://github.com/PsalmmyBabs)
+[LinkedIn](https://linkedin.com/in/samuelbbabajide) · [GitHub](https://github.com/SamuelBabajide)
 
